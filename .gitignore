@@ -1,0 +1,7 @@
+#imgs
+NivesFirstApplication/images/*
+
+#release
+NivesFirstApplication/obj/*
+
+packages/*

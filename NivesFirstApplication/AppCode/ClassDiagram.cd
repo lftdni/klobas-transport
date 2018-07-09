@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KlobasTransport.AppCode.Admini">
+    <Position X="1.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppCode\Admini.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlobasTransport.AppCode.Banner">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>AppCode\Banner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlobasTransport.AppCode.Category">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>AppCode\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlobasTransport.AppCode.DataContainer">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>AppCode\DataContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlobasTransport.AppCode.DataManager">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACACAAEAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppCode\DataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlobasTransport.AppCode.DbObjekt">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppCode\DbObjekt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlobasTransport.AppCode.Novost">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAIAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppCode\Novost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KlobasTransport.AppCode.SiteContent">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAkAAAAAAAIACAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>AppCode\SiteContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

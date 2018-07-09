@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/Admin/AdminMaster.master.cs" Inherits="KlobasTransport.Administration.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+    <title>Sustav upravljanja </title>
+  
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/ui/jquery-ui-1.8.13.custom.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/elfinder.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/Sourcerer-1.2.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/chosen.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/uniform.default.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/data-table.css" type="text/css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/fullcalendar.css" media="screen"/>
+<link rel="stylesheet" href="css/colorpicker.css" type="text/css" media="screen"/>
+
+<script src="js/jquery-1.6.2.min.js"></script>
+<script src="js/jquery-ui-1.8.16.custom.js"></script>
+<script src="js/tiny_mce/jquery.tinymce.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/jquery.raty.js"></script>
+<script src="js/jquery.uniform.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script src="js/Sourcerer-1.2.js"></script>
+<script src="js/jquery.tipTip.js"></script>
+<script src="js/jquery.menu.js"></script>
+<script src="js/jquery.accordion.js"></script>
+<script src="js/jquery.collapsible.js"></script>
+<script src="js/jquery.treeview.js"></script>
+<script src="js/elfinder.min.js"></script>
+<!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
+<script type="text/javascript" src="js/colorpicker.js"></script>
+<script type="text/javascript" src="js/eye.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript" src="js/jquery.notify.js"></script>
+<script type="text/javascript" src="js/jquery.simplemodal.js"></script>
+<script type="text/javascript" src="js/jquery.jBreadCrumb.1.1.js"></script>
+<script type="text/javascript" src="js/iphone-style-checkboxes.js"></script>
+<script type="text/javascript" src="js/custom.script.js"></script>
+ 
+     <script type="text/javascript">
+         $(function () {
+            // $(".datepicker1").datepicker({ "dateFormat": "dd.mm.yy" }); //funkcija
+         });       
+</script>
+</head>
+
+<body>
+
+     <div id="wrapper">
+       <div id="header">
+            <div id="logo" class="droptips">
+            <a href="#" title="Admin Panel"><img src="css/images/LogozaadminKlobas1.png" width="190" height="58" alt="Admin Panel" /></a>
+            </div> <!--id logo-->
+
+           <div id="topbar">
+			<ul class="notify-button">
+				
+				<li class="msg-alert"><a href="#"><span class="new-alert">**</span></a></li>
+			</ul>
+		</div>
+		<div id="usermenu">
+			<a href="#" class="admin-user"><span class="mnu-indicator"></span>Administrator<span class="user-icon"></span></a>
+            
+			<div class="sub-menu">
+				<ul>		
+					<li> <a href="Logout.aspx"> <span class="icon-block-black locked-tw-b"> </span> Logout </a>  </li>					   
+				</ul>
+			</div>
+		</div>
+
+        </div> <!---Header closed -->
+
+	<div id="container">
+		<div id="sidebar">
+			<ul id="sidenav" class="menu collapsible">
+				
+                <li> <p style="align-content:space-around"><span class="nav-icon dboard-icon">  </span><a href="index.aspx" id="Admin"><strong>Administracija</strong> </a> </p> </li> 
+                           
+				<li><a href="#empty" class="active"><span class="nav-icon frm-element"></span>Baneri<span class="n-count">+</span>
+                <span class="active-nidicator">&nbsp;</span></a>
+				<ul class="acitem" id="menuBanner">		
+                    <li><a href="BannerList.aspx"><span class="list-icon">&nbsp;</span>Pregled banera</a></li>			
+					<li><a href="EditBanner.aspx"><span class="list-icon">&nbsp;</span>Unos banera</a></li>
+				</ul>
+                </li>
+
+                <li><a href="#empty" class="active"><span class="nav-icon frm-element"></span>Novosti<span class="n-count">+</span>
+                <span class="active-nidicator">&nbsp;</span></a>
+				<ul class="acitem" id="menuNovost">			
+                    <li><a href="NovostiList.aspx"><span class="list-icon">&nbsp;</span>Pregled novosti</a></li>		
+					<li><a href="EditNovosti.aspx"><span class="list-icon">&nbsp;</span>Unos novosti</a></li>
+				</ul>
+				</li>
+
+                 <li><a href="#empty" class="active"><span class="nav-icon frm-element"></span> Administratori<span class="n-count">+</span>
+                <span class="active-nidicator">&nbsp;</span></a>
+				<ul class="acitem" id="menuAdmin">
+                    <li><a href="AdminList.aspx"><span class="list-icon">&nbsp;</span>Pregled Admina</a></li>
+					<li><a href="EditAdmin.aspx"><span class="list-icon">&nbsp;</span>Unos Admina</a></li>
+				</ul>
+				</li>
+
+			</ul>
+		</div>
+
+          <div id="content">
+           <div class="container_12">
+                <div class="widget-panel grid_12">
+                    <asp:ContentPlaceHolder ID="cphMain" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+
+           </div>
+           </div>   <!---Content closed-->
+      </div>  <!---Comntainer closed -->
+    </div>  <!---Wrapper closed -->
+
+<div id="footer-wrap">
+	<div id="footer">
+	  <div id="goTop"> 
+		  <a href="#" class="tip-top" title="Go Top">Top</a>
+		</div>
+    </div>
+</div> <!--- Footer-wrap closed -->
+
+</body>
+</html>
